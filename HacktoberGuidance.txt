@@ -1,0 +1,115 @@
+Hacktober Guidance — concise checklist and tips
+
+What is Hacktoberfest?
+Hacktoberfest is an annual month-long event that encourages contributing to open-source projects by making pull requests (PRs) during October. It’s a great way to learn, give back, and get visibility — but quality matters: maintainers look for useful, well-formed contributions.
+
+Quick rules (summary)
+
+* Event window: October 1–31 (local timezone of the host site).
+* Required actions: Make valid PRs to public repositories that are tagged or accepted by the event (check event rules for the year).
+* PR quality: PRs must be meaningful, adhere to project contribution guidelines, and pass any automated checks to be accepted.
+* Respect maintainers: Follow the repository’s contribution guide, be patient, and respond to feedback.
+
+Before you start — checklist
+
+1. Create/update your GitHub profile (display name, bio, contact).
+2. Set up Git locally (username, email) and SSH key or PAT for pushing.
+3. Fork repositories you plan to contribute to.
+4. Read CONTRIBUTING.md, CODE_OF_CONDUCT.md, and README in the repo.
+5. Search for issues with labels like `good first issue`, `help wanted`, `hacktoberfest`, `beginner`, `up-for-grabs`.
+
+How to find good issues
+
+* Use GitHub search filters: `label:"good first issue" language:JavaScript state:open` etc.
+* Explore repositories you use or care about — start with those.
+* Check GitHub Topics (e.g., `topic:hacktoberfest` or `topic:good-first-issue`).
+* Join communities: Discord/Slack/Reddit of relevant projects or the Hacktoberfest official community.
+
+Types of valuable contributions
+
+* Bug fixes with a test demonstrating the fix.
+* Documentation improvements (README, examples, tutorials).
+* Tests and test improvements.
+* Small features or enhancements (after discussing on an issue/PR).
+* Accessibility, i18n, or usability fixes.
+* Refactoring that improves readability or reduces complexity.
+
+PR workflow (recommended)
+
+1. Fork the repo to your account.
+2. Create a feature branch: `git checkout -b fix/short-descriptive-name`.
+3. Make minimal, focused commits with clear messages.
+4. Run tests and linters locally before committing.
+5. Push the branch to your fork.
+6. Open a PR from your branch to the original repo’s target branch (usually `main` or `master`).
+7. In your PR description: reference the issue (e.g., `Closes #123` if appropriate), explain what you changed and why, list any testing steps.
+8. Be responsive to maintainer feedback and update the PR as requested.
+
+PR quality checklist (before opening)
+
+* Does the change solve a clearly described problem?
+* Does it follow the repository’s style and lint rules?
+* Are there tests or instructions for manual testing?
+* Is the PR limited in scope (one problem per PR)?
+* Is your commit history tidy (squash or rebase if necessary)?
+
+Documentation PRs — how to make them useful
+
+* Improve examples that reproduce common tasks.
+* Fix typos and broken links.
+* Add a short, runnable snippet where possible.
+* If adding a new topic, include a rationale and brief usage guide.
+
+Common pitfalls to avoid
+
+* Submitting low-effort or automated PRs that add no lasting value.
+* Ignoring or breaking the repository’s contribution rules.
+* Large PRs touching many unrelated files — split them.
+* Rewriting code without tests or maintainers’ agreement.
+
+Communicating with maintainers
+
+* Open an issue first for non-trivial changes or features.
+* Use clear, polite language and provide screenshots or traces for bugs.
+* If a maintainer requests changes, respond promptly and explain if you can’t make them.
+
+If a PR is closed or rejected
+
+* Read the maintainer’s reason carefully.
+* Ask clarifying questions if the feedback is unclear.
+* Rework and reopen or open a new PR only if you address the feedback.
+
+Automation & tools
+
+* Use GitHub Actions / CI to verify tests and linters.
+* Use `prettier`, `eslint`, or language-specific formatters to match style.
+* Use `gh` CLI for quick workflows (create PRs, view issues).
+
+Sample PR template (short)
+Title: `fix: short description (#issue-number)`
+
+Description:
+
+* What: Briefly describe the change.
+* Why: Why this change is needed.
+* How tested: Steps or test results.
+* Related: Closes #<issue> (if applicable)
+
+Final tips
+
+* Aim for impact over volume: a few high-quality PRs are better than many trivial ones.
+* Start with documentation and tests if you’re unsure about codebase rules.
+* Learn from review comments — they’re mentorship from experienced maintainers.
+* Be courteous: open-source thrives on respectful collaboration.
+
+Resources (quick list)
+
+* Official Hacktoberfest site (check rules each year).
+* GitHub labels: `good first issue`, `help wanted`.
+* `first-contributions` repo for a guided first PR experience.
+
+Good luck — and happy contributing! 🎉
+
+---
+
+(End of hacktoberGuidance.txt)
